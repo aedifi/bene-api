@@ -8,6 +8,7 @@ import java.util.Locale;
 import java.util.Map;
 import org.bukkit.command.CommandSender;
 
+@Deprecated(since = "2.0", forRemoval = true)
 public final class ArgumentDispatcher {
     @FunctionalInterface
     public interface ArgumentHandler {
