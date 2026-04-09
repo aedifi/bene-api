@@ -7,11 +7,13 @@ public record ModuleDescriptor(
         ModuleId id,
         String name,
         String mainClass,
+        String version,
         int apiVersion) {
     public static final String FILE_NAME = "module.yml";
 
     public ModuleDescriptor {
         Objects.requireNonNull(name, "name");
+        Objects.requireNonNull(version, "version");
     }
 
     public String displayName() {
@@ -22,6 +24,7 @@ public record ModuleDescriptor(
         public static final String ID = "id";
         public static final String NAME = "name";
         public static final String MAIN = "main";
+        public static final String VERSION = "version";
         public static final String API_VERSION = "api-version";
 
         private Keys() {}
