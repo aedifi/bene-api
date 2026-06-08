@@ -3,6 +3,7 @@ package aedifi.bene.api;
 import aedifi.bene.api.service.Commands;
 import aedifi.bene.api.service.Diagnostics;
 import aedifi.bene.api.service.Events;
+import aedifi.bene.api.service.Http;
 import aedifi.bene.api.service.Logging;
 import aedifi.bene.api.service.Permissions;
 import aedifi.bene.api.service.Scheduler;
@@ -22,4 +23,6 @@ public interface PluginContext {
     Diagnostics diagnostics();
 
     Commands commands();
+
+    Http http();
 }
